@@ -1,4 +1,4 @@
 interface:
   display_name: "Market Research Sprint"
-  short_description: "Research market pain, gaps, and offers"
-  default_prompt: "Use $market-research-sprint to research a market, extract customer pain points, and generate offer ideas."
+  short_description: "Validate markets before building"
+  default_prompt: "Use $market-research-sprint to explore this market, triangulate problem, demand, spend, competitors, and distribution, then decide whether to validate, research more, pivot, or kill."
