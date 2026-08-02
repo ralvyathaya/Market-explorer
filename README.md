@@ -1,18 +1,22 @@
 # market-research-sprint
 
-`market-research-sprint` is a Codex skill for turning a rough market idea into customer research, pain points, offer ideas, validation plans, and landing page briefs.
+`market-research-sprint` is a Codex skill for deciding what deserves validation before you build. It triangulates customer problems, demand momentum, commercial behavior, competitors, and distribution into a clear verdict.
 
 It is useful for founders, indie hackers, marketers, creators, and builders who want to understand a market before building.
 
 ## What It Does
 
 - Maps broad markets into categories, niches, and sub-niches.
-- Creates Reddit, forum, review, and community search queries.
+- Creates Reddit, forum, review, app-store, Google Trends, competitor, and commercial-signal research plans.
 - Detects overlapping niches and recommends merge, split, keep separate, or research more.
-- Analyzes pasted Reddit comments, reviews, transcripts, surveys, or notes.
+- Analyzes Reddit posts, reviews, GitHub issues, transcripts, surveys, or notes.
 - Extracts customer pain points and exact customer language.
-- Finds market gaps and ranks business opportunities.
-- Turns research into offer ideas, validation tests, and landing page briefs.
+- Interprets Google Trends as relative momentum and seasonality, not market size.
+- Separates Product Hunt launch attention from TrustMRR verified commercial signals.
+- Compares direct competitors, substitutes, and successful analogs.
+- Applies hard problem, action/spend, and reachability gates before ranking opportunities.
+- Returns `Validate now`, `Research more`, `Pivot`, or `Kill`, plus a manual 7-14 day test.
+- Creates offer or landing-page assets only after validation gates pass or when explicitly requested.
 
 ## Requirements
 
@@ -79,7 +83,7 @@ Start prompts with:
 Use $market-research-sprint to ...
 ```
 
-The skill can use live web research when available, or it can analyze pasted data only. It will not invent customer quotes; quotes must come from pasted text or visible sources.
+The skill can use public web research when available, or analyze pasted data only. No API key is required. It will not invent customer quotes or metrics; every quoted claim must come from pasted text or an opened source.
 
 For best results, include:
 
@@ -131,6 +135,14 @@ Extract pain points, exact customer quotes, frequency, intensity, current soluti
 [paste comments here]
 ```
 
+### Validate Before Building
+
+```text
+Use $market-research-sprint as a market explorer for an AI bookkeeping assistant for solo accountants in the US.
+Find problem evidence beyond Reddit, check Google Trends, compare paid competitors and successful analogs using Product Hunt, TrustMRR, app stores, reviews, and public pricing, then return Validate now, Research more, Pivot, or Kill.
+Do not create a product or landing page yet.
+```
+
 ### Find Market Gaps And Offer Ideas
 
 ```text
@@ -162,8 +174,10 @@ Include page structure, copy, design direction, form requirements, and CTA place
 
 ```text
 Use $market-research-sprint to run a full market research sprint for solo accountants who want more clients.
-Include market map, query pack, pain points, offer ideas, landing page brief, and validation next steps.
+Triangulate problem, demand, spend, competition, and distribution. Apply the hard gates, rank only eligible opportunities, and propose a manual 7-14 day experiment.
 ```
+
+A full sprint does not automatically create an offer or landing page. Ask for those explicitly after the evidence is strong enough.
 
 ## Better Inputs
 
@@ -173,7 +187,7 @@ Good input:
 Market: divorced parents managing custody transitions
 Audience: parents with children aged 5-12
 Country: US
-Goal: find painful problems and offer ideas
+Goal: decide whether to validate, research more, pivot, or kill
 Data: pasted Reddit comments and forum posts
 ```
 
@@ -185,7 +199,7 @@ Research parenting apps.
 
 Weak input still works, but the output will be broader and more speculative.
 
-You can ask for: `market map`, `search query pack`, `pain-point extraction`, `customer language`, `market gap analysis`, `top 3 offer ideas`, `MVP validation plan`, `landing page brief`, or `Lovable.dev prompt`.
+You can ask for: `market map`, `search query pack`, `pain-point extraction`, `Google Trends snapshot`, `competitor and successful analog analysis`, `pre-build validation`, `market gap analysis`, `manual validation plan`, `offer ideas`, `landing page brief`, or `Lovable.dev prompt`.
 
 ## Troubleshooting
 

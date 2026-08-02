@@ -1,7 +1,7 @@
 {
   "name": "market-research-sprint",
-  "version": "0.1.0",
-  "description": "Install a Codex skill for market pain research, gap discovery, offer shaping, and landing page briefs.",
+  "version": "0.2.0",
+  "description": "Install a Codex skill for evidence-backed pre-build market validation.",
   "license": "MIT",
   "author": "RALVY",
   "repository": {
@@ -19,6 +19,9 @@
     "market-research",
     "customer-research",
     "reddit-research",
+    "google-trends",
+    "competitor-research",
+    "idea-validation",
     "startup"
   ],
   "bin": {
