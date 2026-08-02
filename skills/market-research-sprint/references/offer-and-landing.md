@@ -1,8 +1,12 @@
 # Offer and Landing Workflow
 
+## Evidence Gate
+
+Generate offers or landing-page briefs after the candidate receives `Validate now`, or when the user explicitly requests them. If a gate has not passed, label the result as a hypothesis and name the missing proof. A full sprint does not automatically include an offer or landing page.
+
 ## Opportunity Generation
 
-Start from known pain points. If no pain evidence exists, generate hypotheses but mark them as unvalidated.
+Start from known pain points, action/spend evidence, a reachable channel, and the competitive gap. If the user explicitly requests concepts before those exist, generate hypotheses but mark them as unvalidated.
 
 Apply these lenses:
 
@@ -70,18 +74,18 @@ Use this structure:
 - Kill criterion:
 ```
 
-For full sprint outputs, compress the top offers into this table:
+When offer generation is allowed, compress the top offers into this table:
 
 ```markdown
 | Offer | Buyer | Promise | Differentiator | MVP test | Risk |
 |---|---|---|---|---|---|
 ```
 
-The MVP test must be manual or concierge-first when possible. Avoid recommending software buildout until the buyer, pain, and willingness to act are clearer.
+The MVP test must be manual or concierge-first when possible and run in 7-14 days. Avoid recommending software buildout until the problem, action/spend, and reachability gates pass.
 
 ## Landing Page Brief
 
-Create a builder-agnostic landing page brief by default. Only create a Lovable.dev, Framer, Webflow, or other tool-specific prompt when the user asks for that tool.
+Create a builder-agnostic landing page brief only after a passing verdict or an explicit request. Only create a Lovable.dev, Framer, Webflow, or other tool-specific prompt when the user asks for that tool.
 
 Use a Before-After-Bridge structure:
 
