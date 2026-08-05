@@ -201,6 +201,21 @@ Weak input still works, but the output will be broader and more speculative.
 
 You can ask for: `market map`, `search query pack`, `pain-point extraction`, `Google Trends snapshot`, `competitor and successful analog analysis`, `pre-build validation`, `market gap analysis`, `manual validation plan`, `offer ideas`, `landing page brief`, or `Lovable.dev prompt`.
 
+## Use In Zed
+
+Zed does not read Codex skills, so use the self-contained rules file at `zed/market-research-sprint.md` (SKILL.md and all three references inlined). Either:
+
+- Copy it to your Zed user rules: `~/.config/zed/rules/market-research-sprint.md` (toggle it on in the Agent Panel), or
+- Copy it into your project as `.rules` / a `.zed/rules/` file, or just mention `@zed/market-research-sprint.md` in the Agent Panel when you want to use it.
+
+Then prompt normally:
+
+```text
+Run a full market research sprint for solo accountants who want more clients.
+```
+
+Without Zed web search/fetch tools, the agent will return a query/export pack instead of live research.
+
 ## Troubleshooting
 
 If `npx` is not recognized, install Node.js 18 or newer, then open a new terminal and run `node --version` and `npx --version`.
